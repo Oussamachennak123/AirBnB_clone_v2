@@ -13,7 +13,7 @@ sudo mkdir -p /data/web_static/releases/test/
 sudo mkdir -p /data/web_static/shared/
 
 # create fake html
-echo 'This is a fake html' | /data/web_static/releases/test/index.html
+echo 'This is a fake html' | sudo tee /data/web_static/releases/test/index.html
 
 # ls -sf : create symbolic link
 sudo ln -sf /data/web_static/releases/test/ /data/web_static/current
