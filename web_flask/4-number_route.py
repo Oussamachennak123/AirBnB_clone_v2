@@ -26,7 +26,6 @@ def is_cool(text='is cool'):
     return "Python " + text.replace('_', ' ')
 
 
-@app.route('/number', strict_slashes=False)
 @app.route('/number/<int:n>', strict_slashes=False)
 def n_int(n):
     return "{:d} is a number".format(n)
