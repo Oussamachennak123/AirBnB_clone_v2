@@ -22,7 +22,7 @@ def c(text):
 
 @app.route('/python/<text>', strict_slashes=False)
 def is_cool(text):
-    return "Python " + text.replace('_', ' ')
+    return "Python " + text.replace(' ', '_')
 
 
 if __name__ == '__main__':
