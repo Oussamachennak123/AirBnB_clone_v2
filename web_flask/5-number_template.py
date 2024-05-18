@@ -33,7 +33,7 @@ def n_int(n):
 
 @app.route('/number_template/<n:int>', strict_slashes=False)
 def H1(n):
-    return render_template('templates/5-number.html', n=n)
+    return render_template('5-number.html', n=n)
 
 
 if __name__ == '__main__':
