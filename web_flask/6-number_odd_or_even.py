@@ -37,7 +37,7 @@ def template(n):
 
 
 @app.route('/number_odd_or_even/<int:n>', strict_slashes=False)
-def even(n):
+def even_odd(n):
     if n % 2 == 0:
         a = 'even'
     else:
